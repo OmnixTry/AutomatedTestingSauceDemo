@@ -11,10 +11,13 @@ public class CatalogPage {
 
     private WebDriver driver;
 
-    @FindBy(xpath = "//*[@id=\"inventory_container\"]/div/div[1]/div[3]/button")
+    //@FindBy(xpath = "//*[@id=\"inventory_container\"]/div/div[1]/div[3]/button")
+    ////*[@id="add-to-cart-sauce-labs-backpack"]
+    @FindBy(xpath = "//*[@id=\"add-to-cart-sauce-labs-backpack\"]")
     private WebElement catalogProduct;
-
-    @FindBy(xpath = "//*[@id=\"inventory_container\"]/div/div[1]/div[3]/div")
+    ////*[@id="inventory_container"]/div/div[1]/div[2]/div[2]/div
+    //@FindBy(xpath = "//*[@id=\"inventory_container\"]/div/div[1]/div[3]/div")
+    @FindBy(xpath = "//*[@id=\"inventory_container\"]/div/div[1]/div[2]/div[2]/div")
     private WebElement productPrice;
 
     @FindBy(xpath = "//*[@id=\"shopping_cart_container\"]/a")

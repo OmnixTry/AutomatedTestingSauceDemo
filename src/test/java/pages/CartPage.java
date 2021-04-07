@@ -10,7 +10,9 @@ import org.openqa.selenium.support.PageFactory;
 public class CartPage {
     private WebDriver driver;
 
-    @FindBy(xpath = "/html/body/div/div/div/div[3]/div/div[1]/div[3]/div[2]/div[2]/div")
+    //@FindBy(xpath = "/html/body/div/div/div/div[3]/div/div[1]/div[3]/div[2]/div[2]/div")
+    ////*[@id="cart_contents_container"]/div/div[1]/div[3]/div[2]/div[2]/div
+    @FindBy(xpath = "//*[@id=\"cart_contents_container\"]/div/div[1]/div[3]/div[2]/div[2]/div")
     private WebElement firstProductPrice;
 
 
@@ -24,8 +26,8 @@ public class CartPage {
     }
 
     public boolean CheckProductPrice(String original) {
-
-        return firstProductPrice.getText().equals(original.substring(1));
+        var x = firstProductPrice.getText();
+        return firstProductPrice.getText().equals(original);
     }
 
 }

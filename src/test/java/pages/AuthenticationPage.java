@@ -22,8 +22,9 @@ public class AuthenticationPage {
 
     @FindBy(xpath = "//*[@id=\"page_wrapper\"]/footer/div/text()[3]")
     private WebElement productLabel;
-
-    @FindBy(xpath = "//*[@id=\"login_button_container\"]/div/form/h3")
+    //*[@id="login_button_container"]/div/form/div[3]/h3/button
+    //@FindBy(xpath = "//*[@id=\"login_button_container\"]/div/form/h3")
+    @FindBy(xpath = "//*[@id=\"login_button_container\"]/div/form/div[3]")
     private WebElement errorMessageUnauthenticated;
 
     @FindBy(xpath = "/html/body/div/div/div/div[3]/div/div[1]/div[3]/div[2]/div[2]/div")

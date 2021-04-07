@@ -31,8 +31,7 @@ public class CatalogTest {
         driver.manage().window().maximize();
     }
 
-    // negative test
-    // unauthenticated user can't enter catalog
+
     @Test
     public void testProductAdd() throws InterruptedException {
         driver.get("https://www.saucedemo.com/");

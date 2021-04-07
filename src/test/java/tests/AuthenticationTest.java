@@ -27,7 +27,8 @@ public class AuthenticationTest {
         driver.manage().window().maximize();
     }
 
-    //    xpath example
+    // negative test
+    // unauthenticated user can't enter catalog
     @Test
     public void testRedirectToRegisterPage() {
         driver.get("https://www.saucedemo.com/inventory.html");
